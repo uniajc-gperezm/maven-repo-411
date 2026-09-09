@@ -188,3 +188,5 @@ Si alguna aserción falla, Maven marca el build como **fallido** (`BUILD FAILURE
 | `mvn package` | Genera el `.jar` en `target/`. |
 | `mvn clean` | Elimina la carpeta `target/`. |
 | `mvn clean install` | Limpia, compila, prueba, empaqueta e instala el artefacto en el repositorio local. |
+
+Lider de proyecto: Gabriel Perez
