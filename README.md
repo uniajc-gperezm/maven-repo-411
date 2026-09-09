@@ -190,4 +190,6 @@ Si alguna aserción falla, Maven marca el build como **fallido** (`BUILD FAILURE
 | `mvn clean install` | Limpia, compila, prueba, empaqueta e instala el artefacto en el repositorio local. |
 
 Lider de proyecto: Gabriel Perez
-Integrante #1: Francisco Arboleda
+Integrante #1: Francisco Arboleda 
+
+juan lasso ya tu sabes
