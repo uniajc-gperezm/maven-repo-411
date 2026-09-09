@@ -1,5 +1,11 @@
 # demo-maven411
 
+Grupo 411
+
+Lider Gabriel Perez Moreno
+Integrante Daniel Toro
+
+
 Proyecto de demostración con Maven, JUnit (Jupiter) y dependencia de MySQL configurada en el `pom.xml`.
 
 ## Tabla de contenido
