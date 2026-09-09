@@ -1,6 +1,6 @@
 # demo-maven411
 
-Proyecto de demostración con Maven, JUnit 5 y conexión a MySQL.
+Proyecto de demostración con Maven, JUnit (Jupiter) y dependencia de MySQL configurada en el `pom.xml`.
 
 ## Tabla de contenido
 
