@@ -191,3 +191,4 @@ Si alguna aserción falla, Maven marca el build como **fallido** (`BUILD FAILURE
 
 Lider de proyecto: Gabriel Perez
 Integrante #1: Francisco Arboleda
+Integrante: Alejandro Mosquera
