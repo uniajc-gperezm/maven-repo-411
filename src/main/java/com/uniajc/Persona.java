@@ -3,11 +3,48 @@ package com.uniajc;
 public class Persona {
 
     // Atributos de la clase Persona
+    // Abstracción de los atributos de la clase Persona
     private String identificacion;
     private String nombre;
     private int edad;
     private String correo;
     
+    
+    // Getters y Setters de los atributos de la clase Persona
+    // Encapsulamiento de los atributos de la clase Persona
+
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
     // Constructor Vacio de la clase Persona 
     public Persona() {
     }
@@ -34,11 +71,6 @@ public class Persona {
         System.out.println("Edad: " + edad);
         System.out.println("Correo: " + correo);
         System.out.println("-----------------------------");
-
-    }
-
-    public String getIdentificacion() {
-        return identificacion;
     }
     
 }
