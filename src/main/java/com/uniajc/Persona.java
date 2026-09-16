@@ -1,5 +1,8 @@
 package com.uniajc;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
 public class Persona {
 
     // Atributos de la clase Persona
@@ -7,6 +10,7 @@ public class Persona {
     private String identificacion;
     private String nombre;
     private int edad;
+    private LocalDate fechaNacimiento;
     private String correo;
     
     
@@ -35,6 +39,15 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public int edadSegunFechaNacimiento(){
+        if (fechaNacimiento != null) {
+            LocalDate fechaActual = LocalDate.now();
+            int edadActual = (int) ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
+            return edadActual;
+        }
+        return getEdad();
     }
 
     public String getCorreo() {

@@ -12,6 +12,7 @@ classDiagram
 		+Persona(String id, String nombre, int edad, String correo)
 		+void mostrarInformacion()
 		+String getIdentificacion()
+		+int edadSegunFechaNacimiento()
 	}
 ```
 
@@ -29,6 +30,7 @@ class Persona {
 	+Persona(String id, String nombre, int edad, String correo)
 	+void mostrarInformacion()
 	+String getIdentificacion()
+	+int edadSegunFechaNacimiento()
 }
 @enduml
 ```
