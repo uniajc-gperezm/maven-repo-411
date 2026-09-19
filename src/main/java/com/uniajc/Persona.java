@@ -8,6 +8,9 @@ public class Persona {
     private String nombre;
     private int edad;
     private String correo;
+    private int diaNacimiento;
+    private int mesNacimiento;
+    private int anioNacimiento;
     
     
     // Getters y Setters de los atributos de la clase Persona
@@ -44,6 +47,30 @@ public class Persona {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
+    
+    public int getDiaNacimiento() {
+        return diaNacimiento;
+    }
+ 
+    public void setDiaNacimiento(int diaNacimiento) {
+        this.diaNacimiento = diaNacimiento;
+    }
+ 
+    public int getMesNacimiento() {
+        return mesNacimiento;
+    }
+ 
+    public void setMesNacimiento(int mesNacimiento) {
+        this.mesNacimiento = mesNacimiento;
+    }
+ 
+    public int getAnioNacimiento() {
+        return anioNacimiento;
+    }
+ 
+    public void setAnioNacimiento(int anioNacimiento) {
+        this.anioNacimiento = anioNacimiento;
+    }
 
     // Constructor Vacio de la clase Persona 
     public Persona() {
@@ -61,6 +88,33 @@ public class Persona {
         this.edad = edad;
         this.correo = correo;
     }
+    public Persona(String id, String nombre, int edad, String correo,
+                   int diaNacimiento, int mesNacimiento, int anioNacimiento) {
+        this.identificacion = id;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.correo = correo;
+        this.diaNacimiento = diaNacimiento;
+        this.mesNacimiento = mesNacimiento;
+        this.anioNacimiento = anioNacimiento;
+    }
+ 
+    
+  
+    public int calcularEdad(int diaActual, int mesActual, int anioActual) {
+        if (anioNacimiento == 0) {
+            return 0; //
+        }
+ 
+        int años = anioActual - anioNacimiento;
+ 
+        
+        if (mesActual < mesNacimiento
+                || (mesActual == mesNacimiento && diaActual < diaNacimiento)) {
+            años--;
+        }
+        return años;
+    }
 
     // Metodos clase para mostrar información de la persona
 
@@ -69,6 +123,7 @@ public class Persona {
         System.out.println("Identificación: " + identificacion);
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
+        System.out.println("Fecha de nacimiento: " + diaNacimiento + "/" + mesNacimiento + "/" + anioNacimiento);
         System.out.println("Correo: " + correo);
         System.out.println("-----------------------------");
     }
