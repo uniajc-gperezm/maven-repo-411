@@ -1,8 +1,0 @@
- // Crear un objeto de la clase Persona con parámetros
-        Persona persona3 = new Persona("987654321", "Juan Pérez", LocalDate fechaNacimiento, "correo@mail.com");
-        persona3.setFechaNacimiento(LocalDate.of(1995, 6, 15));
-        //persona3.setEdad(persona3.calcularEdad());
-        persona3.mostrarInformacion();
-        System.out.println("Edad calculada a partir de la fecha de nacimiento: " + persona3.calcularEdad());
-
-    }
