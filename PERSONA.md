@@ -7,11 +7,13 @@ classDiagram
 		-String nombre
 		-int edad
 		-String correo
+		-LocalDate fechaNacimiento
 		+Persona()
 		+Persona(String identificacion)
 		+Persona(String id, String nombre, int edad, String correo)
 		+void mostrarInformacion()
 		+String getIdentificacion()
+		+int calcularEdad()
 	}
 ```
 
@@ -24,11 +26,13 @@ class Persona {
 	-String nombre
 	-int edad
 	-String correo
+	-LocalDate fechaNacimiento
 	+Persona()
 	+Persona(String identificacion)
 	+Persona(String id, String nombre, int edad, String correo)
 	+void mostrarInformacion()
 	+String getIdentificacion()
+	+int calcularEdad()
 }
 @enduml
 ```
